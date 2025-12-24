@@ -19,7 +19,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'feature-1: Deploying to Staging...'
-                sh 'feature-1: echo "Deploy success!"'
+                sh 'echo "feature-1: Deploy success!"'
             }
         }
     }
