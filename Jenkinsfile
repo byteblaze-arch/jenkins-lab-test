@@ -18,8 +18,8 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'feature-1: Deploying to Staging...'
-                sh 'echo "feature-1: Deploy success!"'
+                echo 'feature-1: Polling Deploying to Staging...'
+                sh 'echo "feature-1: Polling Deploy success!"'
             }
         }
     }
