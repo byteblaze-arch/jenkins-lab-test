@@ -4,22 +4,22 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'feature-1 : Polling Building the application...'
+                echo 'feature-1 : Polling 3 Building the application...'
                 // Simulating a build command
-                sh 'echo "feature-1: Polling Compile complete!"' 
+                sh 'echo "feature-1: Polling 3  Compile complete!"' 
             }
         }
         stage('Test') {
             steps {
-                echo 'feature-1: Polling Running Unit Tests...'
+                echo 'feature-1: Polling 3  Running Unit Tests...'
                 // Simulating a test
-                sh 'echo "feature-1: Polling Tests Passed!"'
+                sh 'echo "feature-1: Polling 3  Tests Passed!"'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'feature-1: Polling 2 Deploying to Staging...'
-                sh 'echo "feature-1: Polling 2 Deploy success!"'
+                echo 'feature-1: Polling 3 Deploying to Staging...'
+                sh 'echo "feature-1: Polling 3 Deploy success!"'
             }
         }
     }
