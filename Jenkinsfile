@@ -4,22 +4,22 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'feature-1 : Polling 3 Building the application...'
+                echo 'feature-1 : Testing Webhook Trigger Building the application...'
                 // Simulating a build command
-                sh 'echo "feature-1: Polling 3  Compile complete!"' 
+                sh 'echo "feature-1: Testing Webhook Trigger  Compile complete!"' 
             }
         }
         stage('Test') {
             steps {
-                echo 'feature-1: Polling 3  Running Unit Tests...'
+                echo 'Testing Webhook Trigger Running Unit Tests...'
                 // Simulating a test
-                sh 'echo "feature-1: Polling 3  Tests Passed!"'
+                sh 'echo "Testing Webhook Trigger Tests Passed!"'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'feature-1: Polling 3 Deploying to Staging...'
-                sh 'echo "feature-1: Polling 3 Deploy success!"'
+                echo 'Testing Webhook Trigger Deploying to Staging...'
+                sh 'echo "Testing Webhook Trigger Deploy success!"'
             }
         }
     }
